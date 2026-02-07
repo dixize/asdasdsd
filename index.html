@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ростелеком | Проектный офис</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <section class="hero-section">
+            <div class="container">
+                <header class="main-header animate__animated animate__fadeInDown">
+                    <div class="logo-area">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA..." alt="Ростелеком Бизнес" class="site-logo">
+                    </div>
+                    <div class="header-divider"></div>
+                    <div class="header-titles">
+                        <span class="brand-name">Ростелеком</span>
+                        <span class="office-name">ПРОЕКТНЫЙ ОФИС</span>
+                    </div>
+                </header>
+
+                <div class="hero-content animate__animated animate__fadeInLeft">
+                    <h1>Отраслевые решения</h1>
+                    <p class="hero-subtitle">Цифровая трансформация промышленности и бизнеса на базе отечественных технологий</p>
+                </div>
+
+                <div class="navigation-grid">
+                    <div class="nav-item" onclick="openSlide('robotics')">
+                        <span class="nav-num">01</span>
+                        <h3>Роботизация производства</h3>
+                        <p>Линии сборки и сварки</p>
+                    </div>
+                    <div class="nav-item" onclick="openSlide('quality')">
+                        <span class="nav-num">02</span>
+                        <h3>Контроль качества</h3>
+                        <p>ИИ и машинное зрение</p>
+                    </div>
+                    <div class="nav-item" onclick="openSlide('security')">
+                        <span class="nav-num">03</span>
+                        <h3>Средства охраны</h3>
+                        <p>ИТСО и безопасность</p>
+                    </div>
+                    <div class="nav-item" onclick="openSlide('eco')">
+                        <span class="nav-num">04</span>
+                        <h3>Экомониторинг</h3>
+                        <p>Промбезопасность</p>
+                    </div>
+                    <div class="nav-item" onclick="openSlide('equipment')">
+                        <span class="nav-num">05</span>
+                        <h3>Тех. оборудование</h3>
+                        <p>Импортозамещение</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-office-section">
+            <div class="container">
+                <div class="section-title-box">
+                    <h2>Проектный офис</h2>
+                    <div class="accent-line"></div>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="f-icon">🏢</div>
+                        <h4>Комплексный подход</h4>
+                        <p>Мы берем на себя всё: от предпроектного обследования и проектирования до поставки, монтажа и последующего сервисного обслуживания в режиме 24/7.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="f-icon">🇷🇺</div>
+                        <h4>Импортозамещение</h4>
+                        <p>Работаем с проверенными российскими вендорами. Решения соответствуют требованиям ФЗ-187 о безопасности критической информационной инфраструктуры.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="f-icon">📈</div>
+                        <h4>Экономическая эффективность</h4>
+                        <p>Наши внедрения окупаются в среднем за 12–18 месяцев за счет снижения брака, оптимизации ФОТ и повышения производительности труда.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="main-footer">
+            <div class="container">
+                <p>&copy; 2026 ПАО «Ростелеком». Все права защищены. Индустрия 4.0</p>
+            </div>
+        </footer>
+    </div>
+
+    <div id="modal-overlay" class="modal-system hidden">
+        <div class="modal-content-wrapper">
+            <button class="modal-close-btn" onclick="closeSlide()">ВЕРНУТЬСЯ НА ГЛАВНУЮ ✕</button>
+            <div id="dynamic-content"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
